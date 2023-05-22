@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class RationalTest {
 Rational rational1;
 Rational rational2;
-Rational rational3;
+
 
     @BeforeEach
     void setUp() {
        rational1=new Rational(7,2);
         rational2=new Rational(1,4);
-        rational3=new Rational(13,4);
+
     }
 
     @Test
