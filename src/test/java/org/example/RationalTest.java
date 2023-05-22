@@ -19,12 +19,14 @@ Rational rational3;
 
     @Test
     void add() {
-        assertEquals("+15/4",rational1.add(rational2));
+        Rational rationalForAdd=rational1.add(rational2);
+        assertEquals("+15/4",rationalForAdd.getStr());
     }
 
     @Test
     void sub() {
-        assertEquals("+13/4",rational1.sub(rational2).toString());
+        Rational rationalForSubtract=rational1.sub(rational2);
+        assertEquals("+13/4",rationalForSubtract.getStr());
     }
 
     @Test
@@ -35,7 +37,8 @@ Rational rational3;
 
     @Test
     void div() {
-        assertEquals("+14/1",rational1.div(rational2));
+        Rational rationalForDivide=rational1.div(rational2);
+        assertEquals("+14/1",rationalForDivide.getStr());
     }
 
     @Test
