@@ -51,4 +51,8 @@ Rational rational3;
         Rational rational4=rational.generateFractionalNumber(rational,"+");
         assertEquals("+13/4",rational4.getStr());
 }
+@Test
+    void generateBmm(){
+        assertEquals(2,rational1.generateBmm(26,8));
+}
 }
