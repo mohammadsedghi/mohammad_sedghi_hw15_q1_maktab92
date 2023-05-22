@@ -45,5 +45,10 @@ Rational rational3;
     void toFloatingPoint() {
         assertEquals(0.25,rational1.toFloatingPoint(rational2));
     }
-
+@Test
+    void generateFractionalNumberTest(){
+        Rational rational=new Rational(26,8);
+        Rational rational4=rational.generateFractionalNumber(rational,"+");
+        assertEquals("+13/4",rational4.getStr());
+}
 }
