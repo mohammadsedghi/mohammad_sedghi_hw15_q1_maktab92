@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class RationalTest {
-Rational rational1;
-Rational rational2;
+private Rational rational1;
+private Rational rational2;
 
 
     @BeforeEach

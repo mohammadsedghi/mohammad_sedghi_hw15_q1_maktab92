@@ -1,7 +1,7 @@
 package org.example;
 
 public class Rational {
-    //constructor
+
     public Rational(int numerator, int Denominator) {
         setNumerator(numerator);
         setDenominator(Denominator);
@@ -11,7 +11,7 @@ public class Rational {
     private int numerator, Denominator;
     private String str;
 
-    //Setter and Getter
+
     public int getNumerator() {
         return numerator;
     }
@@ -42,7 +42,6 @@ public class Rational {
         this.str = str;
     }
 
-    // this method simplify method
     public Rational generateFractionalNumber(Rational rational, String sign) {
         int anotherNumerator = rational.getNumerator() / generateBmm(rational.getNumerator(), rational.getDenominator());
         int anotherDenominator = rational.getDenominator() / generateBmm(rational.getNumerator(), rational.getDenominator());
@@ -65,7 +64,6 @@ public class Rational {
         return i;
     }
 
-    //this method result is sum of two fraction
     public Rational add(Rational rational) {
         Rational rational3 = new Rational(getNumerator(), getDenominator());
         int sorat = getNumerator();
@@ -81,7 +79,7 @@ public class Rational {
         return generateFractionalNumber(rational3, "+");
     }
 
-    //this method result is mines of two fraction
+
     public Rational sub(Rational rational) {
         Rational rational3 = new Rational(getNumerator(), getDenominator());
         int sorat = getNumerator();
@@ -104,7 +102,7 @@ public class Rational {
         return generateFractionalNumber(rational3, "+");
     }
 
-    //this method result is multiple of two fraction
+
     public Rational mul(Rational rational) {
         Rational rational3 = new Rational(getNumerator(), getDenominator());
         int sorat = getNumerator();
@@ -116,7 +114,7 @@ public class Rational {
         return generateFractionalNumber(rational3, "+");
     }
 
-    //this method result is division of two fraction
+
     public Rational div(Rational rational) {
         Rational rational3 = new Rational(getNumerator(), getDenominator());
         int sorat = getNumerator();
@@ -128,7 +126,6 @@ public class Rational {
         return generateFractionalNumber(rational3, "+");
     }
 
-    //this method result is to float of  fraction
     public double toFloatingPoint(Rational num) {
         int a = num.getNumerator();
         int b = num.getDenominator();
@@ -136,7 +133,7 @@ public class Rational {
         return (double) a / b;
     }
 
-    // overriding to String method
+
     @Override
     public String toString() {
         int anotherNumerator = getNumerator();
